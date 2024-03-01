@@ -1,0 +1,169 @@
+.movie-info-parent {
+  min-height: 85vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.movie-info-parent > .img {
+  border: 0.15rem solid currentColor;
+}
+
+.description {
+  width: 100vmin;
+}
+
+.description > *:not(video) {
+  padding-inline: 2rem;
+}
+
+.description > video {
+  width: 100%;
+}
+
+.details > h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.details > h2 > span {
+  opacity: 0.75;
+}
+
+.details > .media-type {
+  border: 1px solid currentColor;
+  padding: 0.1rem 0.5rem;
+  text-transform: uppercase;
+}
+
+.details > .genres::before,
+.details > .length::before {
+  content: "\2022";
+  margin-inline: 0.5rem;
+}
+
+.progress-bar {
+  position: relative;
+  height: 4rem;
+  width: 4rem;
+  margin-right: 1rem;
+}
+
+.progress-bar > svg {
+  height: 100%;
+  width: 100%;
+  transform: rotate(-90deg);
+}
+
+.progress-bar > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.progress-bar circle {
+  stroke-width: 0.25rem;
+  stroke-linecap: round;
+}
+
+.progress-bar .circle {
+  stroke: var(--hex-dark-gray);
+  fill: rgba(0, 0, 0, 0.5);
+}
+
+.progress-bar .percentage-circle {
+  stroke: var(--hex-red);
+  fill: none;
+}
+
+.info {
+  display: flex;
+  margin-block: 1rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.info > button,
+.info .play-button {
+  background-color: var(--hex-dark-gray);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.75rem;
+  fill: var(--hex-white);
+}
+
+.info .play-button {
+  padding: 0;
+}
+
+.info .play-button:hover {
+  background-color: var(--hex-red);
+}
+
+.info > .watchlist-button > svg {
+  height: 100%;
+  width: 100%;
+}
+
+.h2.skeleton-shimmer {
+  height: 2rem;
+  width: 5rem;
+  margin-bottom: 0.5rem;
+}
+
+.h2.skeleton-shimmer:first-of-type {
+  width: 18rem;
+}
+
+.media-type.skeleton-shimmer,
+.genres > .skeleton-shimmer {
+  display: inline-block;
+  width: 7rem;
+  height: 1rem;
+}
+
+.genres > .skeleton-shimmer::before {
+  animation-delay: 500ms;
+}
+
+.progress-bar.skeleton-shimmer {
+  border-radius: 50%;
+}
+
+.info > button:nth-child(2)::before,
+.info .play-button::before {
+  animation-delay: 600ms;
+}
+
+.info > button:last-child::before {
+  animation-delay: 1800ms;
+}
+
+.info > button:nth-child(3)::before {
+  animation-delay: 1200ms;
+}
+
+.paragraph.skeleton-shimmer {
+  height: 1rem;
+  margin: 0.5rem 2rem;
+}
+
+.paragraph.skeleton-shimmer:nth-of-type(4) {
+  width: 70%;
+}
+
+.paragraph.skeleton-shimmer:nth-of-type(5) {
+  width: 80%;
+}
+
+.paragraph.skeleton-shimmer:last-of-type {
+  width: 50%;
+}

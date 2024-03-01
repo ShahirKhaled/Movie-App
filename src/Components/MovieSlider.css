@@ -1,0 +1,25 @@
+.movie-slider {
+  overflow: auto;
+}
+
+.movie-slider > .thumbnails-wrapper {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.movie-slider a {
+  overflow: hidden;
+  display: block;
+}
+
+.movie-slider img {
+  transition: transform 200ms ease-in-out;
+}
+
+.movie-slider img:hover {
+  transform: scale(1.1);
+}
+
+h2.skeleton-shimmer {
+  width: 20rem;
+}
